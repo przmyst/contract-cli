@@ -44,11 +44,19 @@ async function init() {
             )
             break
 
-        case 'execute':
+        case 'increment':
             msg = new MsgExecuteContract(
                 wallet.key.accAddress,
                 process.argv[3] || process.env.CONTRACT_ADDRESS,
                 {increment: {}}
+            )
+            break
+
+        case 'decrement':
+            msg = new MsgExecuteContract(
+                wallet.key.accAddress,
+                process.argv[3] || process.env.CONTRACT_ADDRESS,
+                {decrement: {}}
             )
             break
 
