@@ -1,6 +1,6 @@
 # Terra Contract CLI
 
-Interact with the Terra blockchain easily using this command-line interface (CLI) script. Perform actions such as storing a contract, instantiating it, executing functions, querying state, and migrating contracts.
+Interact with the Terra Classic blockchain using this command-line interface (CLI) script. Perform actions such as storing a contract, instantiating it, executing functions, querying state, and migrating contracts.
 
 ## Table of Contents
 
@@ -38,7 +38,7 @@ Ensure you have the necessary environment variables set up, such as `MNEMONIC`, 
 
 - **instantiate**: Instantiate a stored contract.
   ```bash
-  node index instantiate [code-id] [luna-deposit] [label]s
+  node index instantiate [code-id] [luna-deposit] [label]
   ```
 
 - **execute**: Execute the `increment` function of a given contract.
@@ -53,5 +53,5 @@ Ensure you have the necessary environment variables set up, such as `MNEMONIC`, 
 
 - **migrate**: Migrate a contract to new code.
   ```bash
-  node index migrate [code-id]
+  node index migrate [contract-address] [code-id]
   ```
