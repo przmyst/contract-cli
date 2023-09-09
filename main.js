@@ -55,9 +55,9 @@ async function init() {
         case 'migrate':
             msg = new MsgMigrateContract(
                 wallet.key.accAddress,
-                process.env.CONTRACT_ADDRESS,
-                process.argv[3] || process.env.CODE_ID,
-                {count: 0},
+                process.argv[3] || process.env.CONTRACT_ADDRESS,
+                process.argv[4] || process.env.MIGRATE_ID,
+                {}
             )
             break
     }

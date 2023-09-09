@@ -12,7 +12,7 @@ Interact with the Terra blockchain easily using this command-line interface (CLI
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/przmyst/contract-cli
+   git clone <repository-url>
    ```
 2. Navigate to the directory and install the dependencies:
    ```bash
